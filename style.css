@@ -1,0 +1,33 @@
+.quadrado {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    /*margin: 2px; /* Espaçamento entre os quadrados */
+}
+
+.vermelho {
+    background-color: red; /* Cor de fundo vermelha para os cantos */
+}
+
+.amarelo {
+    background-color: yellow; /* Cor de fundo amarela para o meio */
+}
+
+.azul {
+    background-color: blue; /* Cor de fundo azul para o quadrado central */
+}
+
+/* ... (seu código anterior) ... */
+
+.verde {
+    background-color: green; /* Cor de fundo verde para a nova fileira */
+}
+
+/* Adiciona borda apenas às divs nas posições 1, 6, 31 e 36 */
+.quadrado:nth-child(1),
+.quadrado:nth-child(6),
+.quadrado:nth-child(25),
+.quadrado:nth-child(30) {
+    border: 2px solid black;
+}
+
